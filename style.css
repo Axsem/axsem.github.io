@@ -1,0 +1,204 @@
+/*
+Akzent farbe: #3AAFA9
+*/
+
+html, body{
+  height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+
+}
+
+/*
+  SIDERBAR
+*/
+
+.sidebar{
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  background-color: black;
+  padding: 30px;
+  float: left;
+}
+
+.logo{
+  height: 140px;
+  width: 140px;
+  background-color: white;
+}
+
+.menu{
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu li{
+  border-bottom: 1px solid #333;
+}
+.menu li a{
+  display: inline-block;
+  padding: 15px 0;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+.menu li a:hover{
+  color: #3AAFA9;
+}
+
+/*
+Content
+*/
+
+.full-height{
+  height: 100%;
+}
+
+.content{
+  margin-left: 200px;
+  margin-right: -200px;
+  width: 100%;
+  height: 100%;
+}
+
+.start-section{
+  position: fixed;
+  z-index: -1;
+}
+
+.start-picture{
+  height: 100%;
+  background-image: url("lama.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.side-content{
+  padding: 70px;
+}
+
+.title-seperator{
+  width: 70px;
+  height: 5px;
+  background-color: #3AAFA9;
+  margin: 30px 0 50px 0;
+}
+
+.side-colored-list{
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.side-colored-list li{
+  border-left: 5px solid #3AAFA9;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+.download-btn{
+  display: inline-block;
+  margin: 30px 0;
+  padding: 10px;
+  border: 1px solid #3AAFA9;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+.download-btn:hover{
+  background-color: #3AAFA9;
+  color: white;
+  text-decoration: none;
+}
+
+/*
+section-experience
+*/
+
+#section-experience{
+  padding: 70px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.timeline {
+  line-height: 1.4em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
+  line-height: inherit;
+}
+/*----- TIMELINE ITEM -----*/
+.timeline-item {
+  padding-left: 40px;
+  position: relative;
+}
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+/*----- TIMELINE INFO -----*/
+.timeline-info {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0 0 0.5em 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+/*----- TIMELINE MARKER -----*/
+.timeline-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+}
+.timeline-marker:before {
+  background: #3AAFA9;
+  border: 3px solid transparent;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 15px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 15px;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.timeline-marker:after {
+  content: "";
+  width: 3px;
+  background: #ccd5db;
+  display: block;
+  position: absolute;
+  top: 24px;
+  bottom: 0;
+  left: 6px;
+}
+.timeline-item:last-child .timeline-marker:after {
+  content: none;
+}
+.timeline-item:not(.period):hover .timeline-marker:before {
+  background: transparent;
+  border: 3px solid #3AAFA9;
+}
+/*----- TIMELINE CONTENT -----*/
+.timeline-content {
+  padding-bottom: 40px;
+}
+.timeline-content p:last-child {
+  margin-bottom: 0;
+}
