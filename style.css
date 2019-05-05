@@ -60,8 +60,7 @@ Content
 }
 
 .content{
-  margin-left: 200px;
-  margin-right: -200px;
+  padding-left: 200px;
   width: 100%;
   height: 100%;
 }
@@ -78,6 +77,20 @@ Content
   background-position: center;
 }
 
+.start-title{
+  padding: 50px 70px;
+  font-size: 32px;
+  color: white;
+  font-weight: 400;
+  bottom: 0px;
+  position: absolute;
+}
+
+.start-title span{
+  font-size: 48px;
+  font-weight: 600;
+}
+
 .side-content{
   padding: 70px;
 }
@@ -87,6 +100,12 @@ Content
   height: 5px;
   background-color: #3AAFA9;
   margin: 30px 0 50px 0;
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .side-colored-list{
@@ -129,6 +148,20 @@ section-experience
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
+
+
+#section-skills{
+  padding: 70px;
+  background-color: rgb(220,220,220);
+}
+
+#section-references{
+  padding: 70px;
+  background-color: white;
+}
+/*
+timeline stuff
+*/
 
 .timeline {
   line-height: 1.4em;
